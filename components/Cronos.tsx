@@ -3,10 +3,11 @@ import {
   StyleSheet,
   View,
   Button,
-  Text
+  Text,
 } from "react-native";
 import TimerScreen from "./TimeScreen";
 import NumericInput from "react-native-numeric-input";
+import App from "./Form";
 
 const Cronos: React.FC = () => {
   // input form from user for exercise, pause, and sets
@@ -118,6 +119,7 @@ const Cronos: React.FC = () => {
 
   return (
     <View>
+      <App></App>
       {isRunning || isTimerPaused ? (
         <TimerScreen
           currentSet={currentSet}
